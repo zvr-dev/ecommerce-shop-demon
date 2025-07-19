@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 2.8rem;
+  background: lightgrey;
+  position: sticky;
+  top: 0;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-right svg{
+  --icon_size:1.2rem;
+  width: var(--icon_size);
+  height: var(--icon_size);
+}
+
+@container (width < 700px) {
+  .navbar {
+    background: red;
+  }
+}
