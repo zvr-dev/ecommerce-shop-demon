@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 import styles from './page.module.css'
+import { Carousel } from './_components/home/carousel';
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Carousel />
     </div>
   );
 }

@@ -1,3 +1,12 @@
+:root {
+  --margin-xs: .15rem;
+  --margin-s: .25rem;
+  --margin-m: .5rem;
+  --margin-l: 1rem;
+  --margin-xl: 2rem;
+
+  --color-grey-50: #f5f5f5;
+}
 
 /* Credits to Andy Bell: https://piccalil.li/blog/a-more-modern-css-reset/ */
 /* Box sizing rules */
@@ -28,6 +37,9 @@ ol[role='list'] {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;

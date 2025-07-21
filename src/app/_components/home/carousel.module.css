@@ -1,0 +1,11 @@
+.carousel {
+    margin-inline: var(--margin-xl);
+}
+
+.card_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .8rem;
+}
