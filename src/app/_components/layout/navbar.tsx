@@ -6,8 +6,8 @@ export const NavBar = () => {
     <nav className='navbar'>
         <Link href='/'><img src='/gs-icon-black.svg' alt="SHOP DEMON LOGO NOT STOLEN" /></Link>
         <ul role="list">
-            <li role="list" className='nav-item'><Link href='/women'>Women</Link></li>
-            <li role="list" className='nav-item'><Link href='/men'>Men</Link></li>
+            <li role="list" className='nav-item'><Link href='/womens'>Women</Link></li>
+            <li role="list" className='nav-item'><Link href='/mens'>Men</Link></li>
             <li role="list" className='nav-item'><Link href='/accessories'>Accessories</Link></li>
         </ul>
         <div className="navbar-right">

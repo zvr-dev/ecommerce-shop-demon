@@ -74,7 +74,12 @@ picture {
   max-width: 100%;
   display: block;
 }
-
+/*  */
+button {
+  all: unset;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
 /* Inherit fonts for inputs and buttons */
 input, button,
 textarea, select {

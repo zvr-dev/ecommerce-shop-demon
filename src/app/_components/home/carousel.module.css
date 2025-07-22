@@ -2,6 +2,11 @@
     margin-inline: var(--margin-xl);
 }
 
+.carousel_heading {
+    text-transform: uppercase;
+    margin-bottom: var(--margin-m);
+}
+
 .card_container {
     width: 100%;
     display: flex;

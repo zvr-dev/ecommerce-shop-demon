@@ -3,19 +3,28 @@ import { CarouselCard, socialsData } from "./carouselCard"
 
 export const Carousel = () => {
 
-    const dummyData : socialsData = {
+    const dummyData : socialsData[] = [
+        {
         username: '@bob',
         imgSrc: '/img/home/hero2.jpg',
         productUrl: '/product'
-    }
+        } ,
+        {
+        username: '@bob',
+        imgSrc: '/img/home/hero2.jpg',
+        productUrl: '/product'
+        } ,
+        {
+        username: '@bob',
+        imgSrc: '/img/home/hero2.jpg',
+        productUrl: '/product'
+        } ,
+    ]
 
     return <section className={styles.carousel}>
-        <h2>Get the look</h2>
+        <h2 className={styles.carousel_heading}>Get the look</h2>
         <ul role="list" className={styles.card_container}>
-           <CarouselCard username={dummyData.username} imgSrc={dummyData.imgSrc} productUrl={dummyData.productUrl}/>
-           <CarouselCard username={dummyData.username} imgSrc={dummyData.imgSrc} productUrl={dummyData.productUrl}/>
-           <CarouselCard username={dummyData.username} imgSrc={dummyData.imgSrc} productUrl={dummyData.productUrl}/>
-           <CarouselCard username={dummyData.username} imgSrc={dummyData.imgSrc} productUrl={dummyData.productUrl}/>
+           {dummyData.map((socialsData, i) => <CarouselCard key={i} username={socialsData.username} imgSrc={socialsData.imgSrc} productUrl={socialsData.productUrl} />)}
         </ul>
     </section>
 }
