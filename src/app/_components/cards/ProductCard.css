@@ -52,15 +52,22 @@
 
 
 .product-details-wrapper {
-    padding: .5rem;
+    font-size: .9rem;
     font-weight: 300;
     text-transform: capitalize;
+    padding: .5rem;
 }
 
 .product-fit, .product-color {
     color: grey;
 }
-
+.product-rating {
+    font-size: .8em;
+    font-weight: bold;
+}
+.product-rating svg{
+    width: .8rem;
+}
 .product-price {
     font-weight: bold;    
 }
