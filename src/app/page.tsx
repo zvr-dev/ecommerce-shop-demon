@@ -5,6 +5,9 @@ import { Carousel } from './_components/home/carousel';
 import { CustomButton } from './_components/buttons/customButton';
 import Link from 'next/link';
 import { ProductScroller } from './_components/scrollers/ProductScroller';
+import { NavigationCardGrid } from './_components/grids/NavigationCardGrid';
+
+import { dummyCategoryCards, dummyNavCardArray } from '@/dummydata';
 
 export default function Home() {
 
@@ -32,13 +35,13 @@ export default function Home() {
 
       {/* Popular Items */}
       <section>
-        <h2>POPULAR RIGHT NOW</h2>
-        <div className="btn-group">
-          <CustomButton variant='dark'> WOMEN </CustomButton>
-          <CustomButton variant='light'> MEN </CustomButton>
-        </div>
-        {/* a Grid */}
+        <NavigationCardGrid title="popular right now" cardArray={dummyNavCardArray}/>
       </section>
+      <div className={styles.video_wrapper}>
+        <video autoPlay={true} muted playsInline width={"100%"} loop>
+          <source type='video/mp4' src="/vid/July_Seasonal_Together_Look_1_Web_Banner_8x3.mp4"/>
+        </video>
+      </div>
 
       {/* New Items */}
       <section>
@@ -48,13 +51,14 @@ export default function Home() {
 
       {/* Categories */}
       <section>
-        <h2>How do you train?</h2>
-        {/* another grid */}
+        <NavigationCardGrid title='how do you train?' 
+          cardArray={dummyNavCardArray.map(({description, ...rest}) => ({...rest}))}/>
       </section>
 
       {/* WOMEN MEN ACCESSPROES */}
       <section>
-        
+        <NavigationCardGrid cardArray={dummyCategoryCards}
+        />
       </section>
 
       {/* QUICK LINKS */}

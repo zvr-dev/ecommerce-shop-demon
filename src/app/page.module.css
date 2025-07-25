@@ -1,4 +1,5 @@
 .content {
+  --section_padding: 2rem;
   min-height: 100vh;
 
 }
@@ -12,6 +13,7 @@
   place-content: center;
   line-height: 1.5rem;
   margin-bottom: var(--margin-xl);
+  z-index: 1;
 }
 
 .hero_content {
@@ -21,6 +23,7 @@
   height: 100%;
   text-align: center;
   width: 55ch;
+  z-index: 1;
 }
 .hero_content > h1 {
   font-size: 3rem;
@@ -33,7 +36,7 @@
   top:0;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero_block::after {
@@ -44,7 +47,6 @@
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,.3);
-  z-index: -1;
 }
 
 .hero_block_button_group {
@@ -64,6 +66,13 @@
   font-weight: bold;
 }
 
-.cards_block_section {
+.video_wrapper {
+  overflow: hidden;
+  max-height: 50rem;
+  margin-bottom: 2rem;
+}
 
+.video_wrapper > video {
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
