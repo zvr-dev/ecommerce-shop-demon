@@ -4,7 +4,7 @@ export const NavBar = () => {
 
     return <>
     <nav className='navbar'>
-        <Link href='/'><img src='/gs-icon-black.svg' alt="SHOP DEMON LOGO NOT STOLEN" /></Link>
+        <Link href='/'><img src='/logo.png' width={32} alt="SHOP DEMON LOGO NOT STOLEN" /></Link>
         <ul role="list">
             <li role="list" className='nav-item'><Link href='/womens'>Women</Link></li>
             <li role="list" className='nav-item'><Link href='/mens'>Men</Link></li>
