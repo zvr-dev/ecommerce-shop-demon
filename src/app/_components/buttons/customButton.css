@@ -8,11 +8,17 @@
 }
 
 .light {
-    background-color: white;
+    background-color: #f3f3f3;
     color: black;
 }
-
+.light:hover {
+  background-color: #dbdbdb;
+}
 .dark {
-    background-color: black;
+    background-color: #1c1c1c;
     color: white;
+}
+
+.dark:hover {
+  background-color: #4b4b4b;
 }
