@@ -1,0 +1,82 @@
+.video_wrapper {
+  overflow: hidden;
+  max-height: 50rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.video_wrapper > video {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  z-index: 0;
+}
+
+.icon {
+    --icon_size:2rem;
+    position: absolute;
+    color: #eeeeee;
+    width: var(--icon_size);
+    height: var(--icon_size);
+    right: var(--icon_size);
+    top: var(--icon_size);
+    opacity: 1;
+    transition: opacity 400ms ease;
+    z-index: 1;
+}
+
+.icon::before {
+    --icon-bg: calc(var(--icon_size) + var(--icon_size)/4);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--icon-bg);
+    height: var(--icon-bg);
+    background-color: black;
+    opacity: .3;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.video_block_content {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(0, -50%);
+  color: white;
+  z-index: 1;
+
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 50ch;
+
+  & > * {
+    pointer-events: auto;
+  }
+  
+  & h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  & > p {
+    font-weight: 300;
+  }
+
+  & > .cta_btn_group {
+    display: flex;
+    gap: .7rem;
+  }
+
+}
