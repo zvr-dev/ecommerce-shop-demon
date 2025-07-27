@@ -28,20 +28,22 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
 
 
     return <section className={style.section_wrapper}>
-        {title !== "" ?
-        <h2 className={style.section_title}>{title}</h2> :
-        ""
+        <div className={style.section_header}>
+            {title !== "" ?
+            <h2 className={style.section_title}>{title}</h2> :
+            ""
         }
-        <div className={style.section_btn_group}>
-            {womenCards.length > 0 ? 
-          <CustomButton variant={currentSelection === "women" ? "dark" : "light"} onClick={() => setCurrentSelection("women")}> WOMEN </CustomButton>
-        : ""}
-        {menCards.length > 0 ? 
-          <CustomButton variant={currentSelection === "men" ? "dark" : "light"} onClick={() => setCurrentSelection("men")}> MEN </CustomButton>
-        : ""}
+            <div className={style.section_btn_group}>
+                {womenCards.length > 0 ? 
+            <CustomButton variant={currentSelection === "women" ? "dark" : "light"} onClick={() => setCurrentSelection("women")}> WOMEN </CustomButton>
+            : ""}
+            {menCards.length > 0 ? 
+            <CustomButton variant={currentSelection === "men" ? "dark" : "light"} onClick={() => setCurrentSelection("men")}> MEN </CustomButton>
+            : ""}
+            </div>
         </div>
         <ul role="list" className={style.carousel_wrapper}>
-            {currentSelection === "women" ? womenCards.map((card, i)=> <NavigationCard 
+            {currentSelection === "women" ? womenCards.slice(0,4).map((card, i)=> <NavigationCard 
                 key = {i}
                 title = {card.title}
                 description= {card.description}
@@ -49,8 +51,8 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
                 imgUrl= {card.imgUrl}
                 url= {card.url}
                 />)
-            : currentSelection === "men" ?
-                menCards.map((card, i)=> <NavigationCard 
+                : currentSelection === "men" ?
+                menCards.slice(0,4).map((card, i)=> <NavigationCard 
                 key = {i}
                 title = {card.title}
                 description= {card.description}
@@ -59,14 +61,14 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
                 url= {card.url}
                 />)
                 :
-                uncategorizedCards.map((card, i)=> <NavigationCard 
-                key = {i}
-                title = {card.title}
-                description= {card.description}
-                buttonLabel={card.buttonLabel}
-                imgUrl= {card.imgUrl}
-                url= {card.url}
-                />)
+                uncategorizedCards.slice(0,4).map((card, i)=> <NavigationCard 
+                    key = {i}
+                    title = {card.title}
+                    description= {card.description}
+                    buttonLabel={card.buttonLabel}
+                    imgUrl= {card.imgUrl}
+                    url= {card.url}
+                    />)
         }
         </ul>
     </section>

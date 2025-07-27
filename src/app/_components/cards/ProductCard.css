@@ -42,7 +42,6 @@
 .product-card-add-to-cart {
     top: 0;
     left: 0;
-    position: relative;
 }
 
 .product-card-add-to-cart::before{
