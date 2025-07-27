@@ -7,6 +7,7 @@ import { VideoHero } from './_components/heros/VideoHero';
 import style from './page.module.css'
 import { dummyCategoryCards, dummyNavCardArray } from '@/app/dummydata';
 import { Hero } from './_components/heros/Hero';
+import { SeoBlock } from './_components/_layout/SeoBlock';
 
 export default function Home() {
 
@@ -56,9 +57,12 @@ export default function Home() {
         <NavigationCarousel cardArray={dummyCategoryCards}
         />
       </section>
+      {/* Back to Top button */}
       <div className={style.btt_wrapper}>
         <Link href="/#"><button className={style.back_to_top_btn}>Back to top</button></Link>
       </div>
+
+      <SeoBlock />
     </div>
   );
 }
