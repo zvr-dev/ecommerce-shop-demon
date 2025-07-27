@@ -8,6 +8,7 @@
   --color-grey-50: #f5f5f5;
 }
 
+/* ===== CSS RESET ===== */
 /* Credits to Andy Bell: https://piccalil.li/blog/a-more-modern-css-reset/ */
 /* Box sizing rules */
 *,
@@ -22,7 +23,6 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -40,6 +40,7 @@ ol[role='list'] {
 ul {
   padding: 0;
 }
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -96,4 +97,11 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+/* ===== CSS RESET END ===== */
 
+
+/* Custom Defaults */
+
+h1, h2 {
+  letter-spacing: 1px;
+}

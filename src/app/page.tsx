@@ -1,11 +1,11 @@
-import style from './page.module.css'
-import { CustomButton } from './_components/buttons/customButton';
 import Link from 'next/link';
+import { CustomButton } from './_components/buttons/customButton';
 import { ProductCarousel } from './_components/carousels/ProductCarousel';
 import { NavigationCarousel } from './_components/carousels/NavigationCarousel';
+import { VideoHero } from './_components/videoPlayers/VideoHero';
 
+import style from './page.module.css'
 import { dummyCategoryCards, dummyNavCardArray } from '@/app/dummydata';
-import { VideoPlayer } from './_components/videoPlayers/VideoPlayer';
 
 export default function Home() {
 
@@ -37,11 +37,11 @@ export default function Home() {
       </section>
       
       {/* Video */}
-      <VideoPlayer 
+      <VideoHero 
         src="/vid/July_Seasonal_Together_Look_1_Web_Banner_8x3.mp4" 
         title="Strong Season"
         content="Bold shades and sick patterns for you to lift heavy, run fast and push hard in."
-
+        ctaButtons={true}
         />
 
       {/* New Items */}
