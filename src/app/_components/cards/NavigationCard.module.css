@@ -1,32 +1,32 @@
-.nav-card-wrapper {
+.card_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.nav-card-img-wrapper {
+.card_img_wrapper {
     overflow: hidden;
     margin-bottom: 1em;
 }
-.nav-card-img {
+.card_img {
     object-fit: cover;
     aspect-ratio: 7/9;
     transition: transform 450ms ease;
 }
 
-.nav-card-img:hover {
+.card_img:hover {
     transform: scale(1.05);
 }
 
-.nav-card-title {
+.card_title {
     margin-bottom: 1em;
     text-transform: uppercase;
 }
-.nav-card-description {
+.card_description {
     margin-bottom: .8em;
 }
-.nav-card-btn-wrapper {
+.card_btn_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;

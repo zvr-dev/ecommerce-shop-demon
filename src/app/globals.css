@@ -1,11 +1,22 @@
 :root {
+  --mobile-breakpoint: 720px;
+  --tablet-breakpoint:1024px;
+  
   --margin-xs: .15rem;
   --margin-s: .25rem;
   --margin-m: .5rem;
   --margin-l: 1rem;
   --margin-xl: 2rem;
 
+  --color-white:#fff;
   --color-grey-50: #f5f5f5;
+  --color-grey-100: #f3f3f3;
+  --color-grey-200: #dbdbdb;
+  --color-grey-300: #b8b8b8;
+  --color-grey-500: #808080;
+  --color-grey-700: #4b4b4b;
+  --color-grey-900: #1d1d1d;
+
 }
 
 /* ===== CSS RESET ===== */
@@ -45,20 +56,14 @@ ul {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: var(--font-inter), system-ui;
-
+  color: var(--color-grey-900);
+  font-family: var(--font-montserrat), system-ui;
 }
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
 button, input, label {
   line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
 }
 
 /* A elements that don't have a class get default styles */
@@ -104,4 +109,14 @@ textarea:not([rows]) {
 
 h1, h2 {
   letter-spacing: 1px;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+}
+
+button {
+  font-family: var(--font-montserrat);
 }

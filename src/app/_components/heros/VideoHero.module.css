@@ -1,15 +1,46 @@
 .video_wrapper {
   overflow: hidden;
-  max-height: 50rem;
+  max-height: 30rem;
   margin-bottom: 2rem;
-  max-width: 100%;
   position: relative;
 }
+
+.video_wrapper::before {
+  content: "";
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,0));
+}
+
+
 
 .video_wrapper > video {
   object-fit: cover;
   aspect-ratio: 16/9;
+  max-height: inherit;
   z-index: 0;
+}
+
+@media (min-width:1440px) {
+  .video_wrapper {
+    max-height: 59rem;
+  }
+}
+@media (max-width:768px) {
+  .video_wrapper {
+    max-height: fit-content;
+  }
+  .video_wrapper::before {
+    bottom:0;
+    height: 99.5%;
+    background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,0));
+  }
+
+  .video_wrapper > video {
+    aspect-ratio: 2/3;
+  }
 }
 
 .icon {
