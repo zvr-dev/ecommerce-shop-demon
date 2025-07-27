@@ -211,3 +211,58 @@ export const dummyCategoryCards:NavigationCardProps[] = [
   },
 
 ]
+
+export const collectionsLinks = [
+  {
+    title: "Women's Leggings",
+    links: [
+      { collectionName: "Gym Leggings", url: "/collections/gym-leggings" },
+      { collectionName: "Leggings With Pockets", url: "/collections/leggings-with-pockets" },
+      { collectionName: "High Waisted Leggings", url: "/collections/high-waisted-leggings" },
+      { collectionName: "Scrunch Bum Leggings", url: "/collections/scrunch-bum-leggings" },
+      { collectionName: "Black Leggings", url: "/collections/black-leggings" },
+      { collectionName: "Flared Leggings", url: "/collections/flared-leggings" },
+      { collectionName: "Seamless Leggings", url: "/collections/seamless-leggings" },
+      { collectionName: "Petite Gym Leggings", url: "/collections/petite-gym-leggings" },
+    ]
+  },
+  {
+    title: "Women's Gymwear",
+    links: [
+      { collectionName: "Women's Gym Wear", url: "/collections/womens-gym-wear" },
+      { collectionName: "Womens Gym Shorts", url: "/collections/womens-gym-shorts" },
+      { collectionName: "Running Shorts", url: "/collections/running-shorts" },
+      { collectionName: "Sports Bras", url: "/collections/sports-bras" },
+      { collectionName: "High Impact Sports Bras", url: "/collections/high-impact-sports-bras" },
+      { collectionName: "Black Sports Bras", url: "/collections/black-sports-bras" },
+      { collectionName: "Matching Sets", url: "/collections/matching-sets" },
+      { collectionName: "Loungewear", url: "/collections/loungewear" },
+    ]
+  },
+  {
+    title: "Men's Gymwear",
+    links: [
+      { collectionName: "Men's Gymwear", url: "/collections/mens-gymwear" },
+      { collectionName: "Mens Gym Shorts", url: "/collections/mens-gym-shorts" },
+      { collectionName: "Shorts with Pockets", url: "/collections/shorts-with-pockets" },
+      { collectionName: "Men's Running Shorts", url: "/collections/mens-running-shorts" },
+      { collectionName: "Gym Shirts", url: "/collections/gym-shirts" },
+      { collectionName: "Sleeveless T-Shirts", url: "/collections/sleeveless-t-shirts" },
+      { collectionName: "Gym Stringers", url: "/collections/gym-stringers" },
+      { collectionName: "Men's Baselayers", url: "/collections/mens-baselayers" },
+    ]
+  },
+  {
+    title: "Accessories",
+    links: [
+      { collectionName: "Women's Underwear", url: "/collections/womens-underwear" },
+      { collectionName: "Men's Underwear", url: "/collections/mens-underwear" },
+      { collectionName: "Gym Bags", url: "/collections/gym-bags" },
+      { collectionName: "Duffel Bags", url: "/collections/duffel-bags" },
+      { collectionName: "Gym Socks", url: "/collections/gym-socks" },
+      { collectionName: "Crew Socks", url: "/collections/crew-socks" },
+      { collectionName: "Caps", url: "/collections/caps" },
+      { collectionName: "Beanies", url: "/collections/beanies" },
+    ]
+  }
+];

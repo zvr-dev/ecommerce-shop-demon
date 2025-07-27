@@ -1,5 +1,5 @@
 .section_wrapper {
-    padding-inline: var(--page_section_padding);
+    padding-inline: var(--padding-s);
     margin-bottom: 2rem;
 }
 

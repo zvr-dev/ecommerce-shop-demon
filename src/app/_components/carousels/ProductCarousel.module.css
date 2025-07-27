@@ -1,15 +1,14 @@
 
 
 .section_wrapper {
-    /* background-color: #f1f1f1; */
     margin-bottom: 4rem;
+    padding-inline: var(--padding-m);
 }
 
 .section_title_group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    padding-inline: var(--page_section_padding);
 }
 
 .section_title_group > a {
@@ -25,9 +24,6 @@
     grid-auto-columns: 25%;
     overflow-x: auto;
     gap: .5rem;
-    
-    padding-inline: var(--page_section_padding);
-    /* background-color: antiquewhite; */
 }
 
 @media (min-width : 1440px) {
