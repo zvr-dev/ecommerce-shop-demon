@@ -1,5 +1,5 @@
 .content {
-  --section_padding: 2rem;
+  --page_section_padding: 2rem;
   min-height: 100vh;
 
 }
@@ -64,15 +64,4 @@
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.video_wrapper {
-  overflow: hidden;
-  max-height: 50rem;
-  margin-bottom: 2rem;
-}
-
-.video_wrapper > video {
-  object-fit: cover;
-  aspect-ratio: 16/9;
 }
