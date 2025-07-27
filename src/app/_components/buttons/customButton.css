@@ -1,6 +1,6 @@
 .btn {
-  padding: .7rem 1.7rem;
-  border-radius: 2rem;
+  padding: .7em 1.7em;
+  border-radius: 2em;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -8,17 +8,18 @@
 }
 
 .light {
-    background-color: #f3f3f3;
-    color: black;
+    background-color: var(--color-grey-50);
+    color: var(--color-grey-900);
 }
-.light:hover {
-  background-color: #dbdbdb;
+.light:hover, .light:active, 
+.light:focus {
+  background-color: var(--color-grey-300);
 }
 .dark {
-    background-color: #1c1c1c;
-    color: white;
+    background-color: var(--color-grey-900);
+    color: var(--color-grey-50);
 }
 
 .dark:hover {
-  background-color: #4b4b4b;
+  background-color: var(--color-grey-700);
 }

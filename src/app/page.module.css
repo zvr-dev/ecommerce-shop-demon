@@ -1,78 +1,18 @@
 .content {
-  --section_padding: 2rem;
   min-height: 100vh;
-
 }
 
-.hero_block{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 20/9;
-  display: grid;
-  place-content: center;
-  line-height: 1.5rem;
-  margin-bottom: var(--margin-xl);
-  z-index: 1;
-}
-
-.hero_content {
-  color: white;
-  display: grid;
-  gap: 1rem;
-  height: 100%;
-  text-align: center;
-  width: 55ch;
-  z-index: 1;
-}
-.hero_content > h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-.hero_img {
-  background-color: grey;
-  position: absolute;
-  top:0;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
-
-.hero_block::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,.3);
-}
-
-.hero_block_button_group {
+.btt_wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: .5rem;
 }
 
-.hero_block_button_group button {
-  padding: .7rem 1.7rem;
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
+.back_to_top_btn {
+  font-size: 1.1rem;
   font-weight: bold;
-}
-
-.video_wrapper {
-  overflow: hidden;
-  max-height: 50rem;
+  background-color: rgba(0,0,0,.2);
+  padding: .5em .7em;
+  border-radius: 2em;
+  text-transform: capitalize;
   margin-bottom: 2rem;
-}
-
-.video_wrapper > video {
-  object-fit: cover;
-  aspect-ratio: 16/9;
 }
