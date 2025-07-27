@@ -2,24 +2,15 @@
 import { useState } from "react"
 import { CustomButton } from "../buttons/customButton"
 import { NavigationCard, NavigationCardProps } from "../cards/NavigationCard"
-import "./NavigationCardGrid.css"
-import { GenderTypes } from "@/app/types/types"
+import "./NavigationCarousel.css"
+import { GenderTypes } from "@/app/_types/types"
 
-type NavigationCardGridProps = {
+type NavigationCarouselProps = {
     title?: string,
     cardArray: NavigationCardProps[]
 }
 
-// {
-//     Women : [
-//         item,item,item
-//     ],
-//     Men: 
-//     [
-//         item,item,item
-//     ]
-// }
-export const NavigationCardGrid = ({title, cardArray}: NavigationCardGridProps) => {
+export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) => {
     const hasCategory = cardArray.some(card => card.category === "women" || card.category === "men")
     const [currentSelection, setCurrentSelection] = useState<GenderTypes | "uncategorized">(hasCategory ? "women": "uncategorized");
 

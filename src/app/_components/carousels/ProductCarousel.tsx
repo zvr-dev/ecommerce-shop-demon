@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { ProductCard, ProductCardProps, Tag } from "../cards/ProductCard";
-import style from "./ProductScroller.module.css"
+import style from "./ProductCarousel.module.css"
 
-type ProductScrollerProps = {
+type ProductCarouselProps = {
     title: string;
     sectionUrl: string;
     data?: ProductCardProps[];
 }
 
-export const ProductScroller = ({title, data, sectionUrl}: ProductScrollerProps) => {
+export const ProductCarousel = ({title, data, sectionUrl}: ProductCarouselProps) => {
     let dummyData = [
   {
     id: 1,

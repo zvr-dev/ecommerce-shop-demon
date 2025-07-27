@@ -1,4 +1,4 @@
-import { GenderTypes } from "@/app/types/types"
+import { GenderTypes } from "@/app/_types/types"
 import "./NavigationCard.css"
 import Link from "next/link"
 import { CustomButton } from "../buttons/customButton"

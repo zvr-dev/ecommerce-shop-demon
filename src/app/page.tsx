@@ -1,11 +1,8 @@
-
-import Image from 'next/image';
 import styles from './page.module.css'
-import { Carousel } from './_components/home/carousel';
 import { CustomButton } from './_components/buttons/customButton';
 import Link from 'next/link';
-import { ProductScroller } from './_components/scrollers/ProductScroller';
-import { NavigationCardGrid } from './_components/grids/NavigationCardGrid';
+import { ProductCarousel } from './_components/carousels/ProductCarousel';
+import { NavigationCarousel } from './_components/grids/NavigationCarousel';
 
 import { dummyCategoryCards, dummyNavCardArray } from '@/dummydata';
 
@@ -27,15 +24,15 @@ export default function Home() {
       </section>
 
       {/* Social Proof for new campaign */}
-      <ProductScroller title="Get The Look" sectionUrl='/'/>
+      <ProductCarousel title="Get The Look" sectionUrl='/'/>
 
       {/* New Campaign Items */}
-      <ProductScroller title="Varsity. Best In Class"  sectionUrl='/'/>
+      <ProductCarousel title="Varsity. Best In Class"  sectionUrl='/'/>
 
 
       {/* Popular Items */}
       <section>
-        <NavigationCardGrid title="popular right now" cardArray={dummyNavCardArray}/>
+        <NavigationCarousel title="popular right now" cardArray={dummyNavCardArray}/>
       </section>
       <div className={styles.video_wrapper}>
         <video autoPlay={true} muted playsInline width={"100%"} loop>
@@ -45,19 +42,19 @@ export default function Home() {
 
       {/* New Items */}
       <section>
-        <ProductScroller title="New in"  sectionUrl='/'/>
+        <ProductCarousel title="New in"  sectionUrl='/'/>
 
       </section>
 
       {/* Categories */}
       <section>
-        <NavigationCardGrid title='how do you train?' 
+        <NavigationCarousel title='how do you train?' 
           cardArray={dummyNavCardArray.map(({description, ...rest}) => ({...rest}))}/>
       </section>
 
       {/* WOMEN MEN ACCESSPROES */}
       <section>
-        <NavigationCardGrid cardArray={dummyCategoryCards}
+        <NavigationCarousel cardArray={dummyCategoryCards}
         />
       </section>
 
