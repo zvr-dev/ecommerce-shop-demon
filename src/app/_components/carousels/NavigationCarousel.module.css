@@ -1,24 +1,24 @@
-.card-section {
+.section_wrapper {
     padding-inline: var(--section_padding);
     margin-bottom: 2rem;
 }
 
-.navigation-grid-title {
+.section_title {
     text-transform: uppercase;
     margin-bottom: .5em;
     
 }
 
-.navigation-grid {
+.section_btn_group {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: .7rem;
+}
+
+.carousel_wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 25%;
     overflow-x: auto;
     gap: .5rem;
-}
-
-.navigation-btn-group {
-    margin-bottom: 1rem;
-    display: flex;
-    gap: .7rem;
 }

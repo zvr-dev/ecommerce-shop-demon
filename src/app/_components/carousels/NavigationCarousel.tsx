@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { CustomButton } from "../buttons/customButton"
 import { NavigationCard, NavigationCardProps } from "../cards/NavigationCard"
-import "./NavigationCarousel.css"
+import style from "./NavigationCarousel.module.css"
 import { GenderTypes } from "@/app/_types/types"
 
 type NavigationCarouselProps = {
@@ -27,12 +27,12 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
     })
 
 
-    return <section className="card-section">
+    return <section className={style.section_wrapper}>
         {title !== "" ?
-        <h2 className="navigation-grid-title">{title}</h2> :
+        <h2 className={style.section_title}>{title}</h2> :
         ""
         }
-        <div className="navigation-btn-group">
+        <div className={style.section_btn_group}>
             {womenCards.length > 0 ? 
           <CustomButton variant={currentSelection === "women" ? "dark" : "light"} onClick={() => setCurrentSelection("women")}> WOMEN </CustomButton>
         : ""}
@@ -40,7 +40,7 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
           <CustomButton variant={currentSelection === "men" ? "dark" : "light"} onClick={() => setCurrentSelection("men")}> MEN </CustomButton>
         : ""}
         </div>
-        <ul role="list" className="navigation-grid">
+        <ul role="list" className={style.carousel_wrapper}>
             {currentSelection === "women" ? womenCards.map((card, i)=> <NavigationCard 
                 key = {i}
                 title = {card.title}

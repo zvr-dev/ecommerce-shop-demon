@@ -2,9 +2,9 @@ import styles from './page.module.css'
 import { CustomButton } from './_components/buttons/customButton';
 import Link from 'next/link';
 import { ProductCarousel } from './_components/carousels/ProductCarousel';
-import { NavigationCarousel } from './_components/grids/NavigationCarousel';
+import { NavigationCarousel } from './_components/carousels/NavigationCarousel';
 
-import { dummyCategoryCards, dummyNavCardArray } from '@/dummydata';
+import { dummyCategoryCards, dummyNavCardArray } from '@/app/dummydata';
 
 export default function Home() {
 
