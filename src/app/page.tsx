@@ -5,14 +5,14 @@ import { NavigationCarousel } from './_components/carousels/NavigationCarousel';
 import { VideoHero } from './_components/heros/VideoHero';
 
 import style from './page.module.css'
-import { dummyCategoryCards, dummyNavCardArray } from '@/app/dummydata';
+import { dummyCategoryCards, dummyNavCardArray, dummyProductDataMen } from '@/app/dummydata';
 import { Hero } from './_components/heros/Hero';
 import { SeoBlock } from './_components/_layout/SeoBlock';
 
 export default function Home() {
 
   return (
-    <div id='hero' className={style.content}>
+    <main className={style.content}>
       {/* HERO SECTION */}
       <Hero 
         title = "new drops for your next workout."
@@ -24,7 +24,11 @@ export default function Home() {
       {/* <ProductCarousel title="Get The Look" sectionUrl='/'/> */}
 
       {/* New Campaign Items */}
-      <ProductCarousel title="new drops for your next workout"  sectionUrl='/'/>
+      <ProductCarousel 
+        title="new drops for your next workout"  
+        sectionUrl='/'
+        data={dummyProductDataMen}
+        />
 
 
       {/* Popular Items */}
@@ -42,7 +46,11 @@ export default function Home() {
 
       {/* New Items */}
       <section>
-        <ProductCarousel title="New in"  sectionUrl='/'/>
+        <ProductCarousel 
+          title="New in"  
+          sectionUrl='/'
+          data={dummyProductDataMen}
+          />
 
       </section>
 
@@ -63,6 +71,6 @@ export default function Home() {
       </div>
 
       <SeoBlock />
-    </div>
+    </main>
   );
 }
