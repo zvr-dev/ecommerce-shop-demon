@@ -11,21 +11,14 @@ type NavigationCarouselProps = {
 }
 
 export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) => {
-    const hasCategory = cardArray.some(card => card.category === "women" || card.category === "men")
-    const [currentSelection, setCurrentSelection] = useState<GenderTypes | "uncategorized">(hasCategory ? "women": "uncategorized");
-
     if (!cardArray) return null;
+    
+    // sort cards
+    let sortedCards = sortCards(cardArray);
 
-    const womenCards: NavigationCardProps[] = []
-    const menCards: NavigationCardProps[]= []
-    const uncategorizedCards: NavigationCardProps[] = []
+    console.log(sortedCards)
 
-    cardArray?.forEach(card => {
-        if (card.category?.toLowerCase() === "men") menCards.push(card)
-        else if (card.category?.toLowerCase() === "women") womenCards.push(card)
-        else uncategorizedCards.push(card)
-    })
-
+    const [currentSelection, setCurrentSelection] = useState<GenderTypes>(Object.keys(sortedCards)[0] as GenderTypes);
 
     return <section className={style.section_wrapper}>
         <div className={style.section_header}>
@@ -33,17 +26,21 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
             <h2 className={style.section_title}>{title}</h2> :
             ""
         }
-            <div className={style.section_btn_group}>
-                {womenCards.length > 0 ? 
-            <CustomButton variant={currentSelection === "women" ? "dark" : "light"} onClick={() => setCurrentSelection("women")}> WOMEN </CustomButton>
-            : ""}
-            {menCards.length > 0 ? 
-            <CustomButton variant={currentSelection === "men" ? "dark" : "light"} onClick={() => setCurrentSelection("men")}> MEN </CustomButton>
-            : ""}
-            </div>
+        {
+            !(Object.keys(sortedCards).length > 1) ? "" :
+                <div className={style.section_btn_group}>
+                    {sortedCards.women?.length > 0 ? 
+                <CustomButton variant={currentSelection === "women" ? "dark" : "light"} onClick={() => setCurrentSelection("women")}> WOMEN </CustomButton>
+                : ""}
+                {sortedCards.men?.length > 0 ? 
+                <CustomButton variant={currentSelection === "men" ? "dark" : "light"} onClick={() => setCurrentSelection("men")}> MEN </CustomButton>
+                : ""}
+                </div>
+        }
         </div>
+
         <ul role="list" className={style.carousel_wrapper}>
-            {currentSelection === "women" ? womenCards.slice(0,4).map((card, i)=> <NavigationCard 
+            {currentSelection === "women" ? sortedCards.women.slice(0,4).map((card, i)=> <NavigationCard 
                 key = {i}
                 title = {card.title}
                 description= {card.description}
@@ -52,7 +49,7 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
                 url= {card.url}
                 />)
                 : currentSelection === "men" ?
-                menCards.slice(0,4).map((card, i)=> <NavigationCard 
+                sortedCards.men.slice(0,4).map((card, i)=> <NavigationCard 
                 key = {i}
                 title = {card.title}
                 description= {card.description}
@@ -61,7 +58,7 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
                 url= {card.url}
                 />)
                 :
-                uncategorizedCards.slice(0,4).map((card, i)=> <NavigationCard 
+                sortedCards.uncategorised.slice(0,4).map((card, i)=> <NavigationCard 
                     key = {i}
                     title = {card.title}
                     description= {card.description}
@@ -72,4 +69,24 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
         }
         </ul>
     </section>
+}
+
+const sortCards = (cardArray : NavigationCardProps[]) => {
+    let uncategorised = "uncategorised"
+    let sortedCards: Record<string, typeof cardArray> = {uncategorised:[]}
+        cardArray.forEach((card) => {
+            if (!card.category) {
+                sortedCards[uncategorised].push(card)
+            }
+            else {
+                if (!(card.category in sortedCards)) {
+                    sortedCards[card.category] = []
+                }
+                sortedCards[card.category].push(card)
+            }
+        })
+    if(sortedCards[uncategorised].length === 0) {
+        delete sortedCards[uncategorised]
+    }
+    return sortedCards
 }
