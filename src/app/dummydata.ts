@@ -1,7 +1,7 @@
 import { NavigationCardProps } from "./_components/cards/NavigationCard";
 import { ProductCardProps } from "./_components/cards/ProductCard";
 
-export const dummyProductData: ProductCardProps[] = [
+export const dummyProductDataMen: ProductCardProps[] = [
   {
     id: 1,
     name: "Varsity Mesh Shorts",
@@ -9,7 +9,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "black",
     tag: "new",
     price: 55,
-    imgUrl: "/img/product/men-1.jpg",
+    imgUrl: "/img/product/men-4.jpg",
     productUrl: "/product/"
   },
   {
@@ -20,7 +20,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "black",
     tag: "hot",
     price: 33,
-    imgUrl: "/img/product/men-2.jpg",
+    imgUrl: "/img/product/men-1.jpg",
     productUrl: "/product/"
   },
   {
@@ -30,7 +30,7 @@ export const dummyProductData: ProductCardProps[] = [
     fit: "slim fit",
     color: "black",
     price: 55,
-    imgUrl: "/img/product/men-3.jpg",
+    imgUrl: "/img/product/men-6.jpg",
     productUrl: "/product/"
   },
   {
@@ -41,7 +41,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "black",
     tag: "new",
     price: 35,
-    imgUrl: "/img/product/men-4.jpg",
+    imgUrl: "/img/product/men-3.jpg",
     productUrl: "/product/"
   },
   {
@@ -51,7 +51,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "black",
     tag: "new",
     price: 28,
-    imgUrl: "/img/product/men-5.jpg",
+    imgUrl: "/img/product/men-7.jpg",
     productUrl: "/product/"
   },
   {
@@ -62,7 +62,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "charcoal",
     tag: "hot",
     price: 60,
-    imgUrl: "/img/product/men-6.jpg",
+    imgUrl: "/img/product/men-2.jpg",
     productUrl: "/product/"
   },
   {
@@ -71,7 +71,7 @@ export const dummyProductData: ProductCardProps[] = [
     fit: "slim fit",
     color: "white",
     price: 25,
-    imgUrl: "/img/product/men-7.jpg",
+    imgUrl: "/img/product/men-5.jpg",
     productUrl: "/product/"
   },
   {
@@ -92,7 +92,7 @@ export const dummyProductData: ProductCardProps[] = [
     color: "black",
     tag: "new",
     price: 38,
-    imgUrl: "/img/product/men-2.jpg",
+    imgUrl: "/img/product/men-7.jpg",
     productUrl: "/product/"
   },
   {
@@ -103,7 +103,114 @@ export const dummyProductData: ProductCardProps[] = [
     color: "navy",
     tag: "hot",
     price: 32,
-    imgUrl: "/img/product/men-3.jpg",
+    imgUrl: "/img/product/men-2.jpg",
+    productUrl: "/product/"
+  }
+];
+
+export const dummyProductDataWomen: ProductCardProps[] = [
+  {
+    id: 101,
+    name: "Seamless Leggings",
+    fit: "slim fit",
+    color: "black",
+    tag: "new",
+    price: 48,
+    imgUrl: "/img/product/women-3.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 102,
+    name: "Cropped Tank Top",
+    rating: 4.3,
+    fit: "regular fit",
+    color: "white",
+    tag: "hot",
+    price: 27,
+    imgUrl: "/img/product/women-1.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 103,
+    name: "High-Waisted Shorts",
+    rating: 4.9,
+    fit: "slim fit",
+    color: "grey",
+    price: 35,
+    imgUrl: "/img/product/women-5.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 104,
+    name: "Oversized Hoodie",
+    rating: 4.6,
+    fit: "oversized fit",
+    color: "pink",
+    tag: "new",
+    price: 52,
+    imgUrl: "/img/product/women-2.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 105,
+    name: "Training Sports Bra",
+    fit: "tight fit",
+    color: "black",
+    tag: "new",
+    price: 30,
+    imgUrl: "/img/product/women-6.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 106,
+    name: "Lightweight Joggers",
+    rating: 4.5,
+    fit: "regular fit",
+    color: "charcoal",
+    tag: "hot",
+    price: 45,
+    imgUrl: "/img/product/women-4.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 107,
+    name: "Essential Crop Top",
+    fit: "slim fit",
+    color: "white",
+    price: 24,
+    imgUrl: "/img/product/women-2.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 108,
+    name: "Flared Leggings",
+    rating: 4.4,
+    fit: "regular fit",
+    color: "blue",
+    tag: "hot",
+    price: 40,
+    imgUrl: "/img/product/women-1.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 109,
+    name: "Lounge Shorts",
+    fit: "regular fit",
+    color: "beige",
+    tag: "new",
+    price: 29,
+    imgUrl: "/img/product/women-5.jpg",
+    productUrl: "/product/"
+  },
+  {
+    id: 110,
+    name: "Active Training Tee",
+    rating: 4.7,
+    fit: "athletic fit",
+    color: "navy",
+    tag: "hot",
+    price: 36,
+    imgUrl: "/img/product/women-3.jpg",
     productUrl: "/product/"
   }
 ];
