@@ -4,11 +4,11 @@ export const NavBar = () => {
 
     return <>
     <nav className='navbar'>
-        <Link href='/'><img src='/logo.png' width={32} alt="SHOP DEMON LOGO NOT STOLEN" /></Link>
+        <Link href='/'><img src='/logo.png' className='nav-logo' width={38} alt="SHOP DEMON LOGO NOT STOLEN" /></Link>
         <ul role="list">
-            <li role="list" className='nav-item'><Link href='/womens'>Women</Link></li>
-            <li role="list" className='nav-item'><Link href='/mens'>Men</Link></li>
-            <li role="list" className='nav-item'><Link href='/accessories'>Accessories</Link></li>
+            <li role="list" className='nav-item'><Link href='/women'>Women</Link></li>
+            <li role="list" className='nav-item'><Link href='/men'>Men</Link></li>
+            <li role="list" className='nav-item'><Link href='/collection/accessories'>Accessories</Link></li>
         </ul>
         <div className="navbar-right">
             <input type="text" placeholder='What are you looking for today'/>

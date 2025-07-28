@@ -37,9 +37,10 @@
 .hero_img {
   background-color: grey;
   position: absolute;
-  top:-1rem;
+  top:0;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  height: 100%;
   width: 100%;
 }
 

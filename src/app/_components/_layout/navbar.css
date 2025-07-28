@@ -4,13 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.3rem 2.8rem;
-  background: var(--color-grey-50);
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: var(--background-color);
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
-
 .navbar > ul {
   display: flex;
   flex-direction: row;
