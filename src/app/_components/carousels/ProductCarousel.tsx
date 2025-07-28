@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { ProductCard, ProductCardProps, Tag } from "../cards/ProductCard";
 import style from "./ProductCarousel.module.css"
-import { dummyProductData } from "@/app/dummydata";
 
 type ProductCarouselProps = {
     title: string;
     sectionUrl: string;
-    data?: ProductCardProps[];
+    data: ProductCardProps[];
 }
 
 export const ProductCarousel = ({title, data, sectionUrl}: ProductCarouselProps) => {
@@ -21,7 +20,7 @@ export const ProductCarousel = ({title, data, sectionUrl}: ProductCarouselProps)
             <Link href={sectionUrl}>View All</Link>
         </div>
         <ul role="list" className={style.carousel_wrapper}>
-            {dummyProductData.map((item) => <ProductCard key={item.id} 
+            {data?.map((item) => <ProductCard key={item.id} 
                 id={item.id} 
                 name={item.name} 
                 rating={item.rating}
