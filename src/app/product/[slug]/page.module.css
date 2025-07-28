@@ -1,0 +1,17 @@
+.product_section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: 1fr 1fr;
+    
+}
+
+.img_wrapper {
+    display: grid;
+}
+
+@media (max-width: 768px) {
+    .product_section{
+        grid-auto-flow: row;
+        grid-template: 1fr;
+    }
+}
