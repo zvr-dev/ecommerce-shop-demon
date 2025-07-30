@@ -16,8 +16,7 @@ const roboto = Roboto({
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-})
-
+});
 
 export const metadata: Metadata = {
   title: "SHOP DEMON",
@@ -31,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${roboto.variable} ${montserrat.variable}`}>
+      <body
+        className={`${inter.variable} ${roboto.variable} ${montserrat.variable}`}
+      >
         <NavBar />
         {children}
         <Footer />

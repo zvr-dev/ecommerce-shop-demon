@@ -10,7 +10,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 55,
     imgUrl: "/img/product/men-4.jpg",
-    productUrl: "/product/varsity-mesh-shorts"
+    productUrl: "/product/varsity-mesh-shorts",
   },
   {
     id: 2,
@@ -21,17 +21,17 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 33,
     imgUrl: "/img/product/men-1.jpg",
-    productUrl: "/product/varsity-oversized-shirt"
+    productUrl: "/product/varsity-oversized-shirt",
   },
   {
     id: 3,
-    name: "Varsity 7\" Shorts",
+    name: 'Varsity 7" Shorts',
     rating: 5,
     fit: "slim fit",
     color: "black",
     price: 55,
     imgUrl: "/img/product/men-6.jpg",
-    productUrl: "/product/varsity-7-shorts"
+    productUrl: "/product/varsity-7-shorts",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 35,
     imgUrl: "/img/product/men-3.jpg",
-    productUrl: "/product/oversized-joggers"
+    productUrl: "/product/oversized-joggers",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 28,
     imgUrl: "/img/product/men-7.jpg",
-    productUrl: "/product/tech-t-shirt"
+    productUrl: "/product/tech-t-shirt",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 60,
     imgUrl: "/img/product/men-2.jpg",
-    productUrl: "/product/athletic-hoodie"
+    productUrl: "/product/athletic-hoodie",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     color: "white",
     price: 25,
     imgUrl: "/img/product/men-5.jpg",
-    productUrl: "/product/performance-tank"
+    productUrl: "/product/performance-tank",
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 42,
     imgUrl: "/img/product/men-1.jpg",
-    productUrl: "/product/lightweight-zip-hoodie"
+    productUrl: "/product/lightweight-zip-hoodie",
   },
   {
     id: 9,
@@ -93,7 +93,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 38,
     imgUrl: "/img/product/men-7.jpg",
-    productUrl: "/product/essential-sweatpants"
+    productUrl: "/product/essential-sweatpants",
   },
   {
     id: 10,
@@ -104,8 +104,8 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 32,
     imgUrl: "/img/product/men-2.jpg",
-    productUrl: "/product/mesh-training-shorts"
-  }
+    productUrl: "/product/mesh-training-shorts",
+  },
 ];
 
 export const dummyProductDataWomen: ProductCardProps[] = [
@@ -117,7 +117,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 48,
     imgUrl: "/img/product/women-3.jpg",
-    productUrl: "/product/seamless-leggings"
+    productUrl: "/product/seamless-leggings",
   },
   {
     id: 102,
@@ -128,7 +128,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 27,
     imgUrl: "/img/product/women-1.jpg",
-    productUrl: "/product/cropped-tank-top"
+    productUrl: "/product/cropped-tank-top",
   },
   {
     id: 103,
@@ -138,7 +138,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     color: "grey",
     price: 35,
     imgUrl: "/img/product/women-5.jpg",
-    productUrl: "/product/high-waisted-shorts"
+    productUrl: "/product/high-waisted-shorts",
   },
   {
     id: 104,
@@ -149,7 +149,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 52,
     imgUrl: "/img/product/women-2.jpg",
-    productUrl: "/product/oversized-hoodie"
+    productUrl: "/product/oversized-hoodie",
   },
   {
     id: 105,
@@ -159,7 +159,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 30,
     imgUrl: "/img/product/women-6.jpg",
-    productUrl: "/product/training-sports-bra"
+    productUrl: "/product/training-sports-bra",
   },
   {
     id: 106,
@@ -170,7 +170,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 45,
     imgUrl: "/img/product/women-4.jpg",
-    productUrl: "/product/lightweight-joggers"
+    productUrl: "/product/lightweight-joggers",
   },
   {
     id: 107,
@@ -179,7 +179,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     color: "white",
     price: 24,
     imgUrl: "/img/product/women-2.jpg",
-    productUrl: "/product/essential-crop-top"
+    productUrl: "/product/essential-crop-top",
   },
   {
     id: 108,
@@ -190,7 +190,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 40,
     imgUrl: "/img/product/women-1.jpg",
-    productUrl: "/product/flared-leggings"
+    productUrl: "/product/flared-leggings",
   },
   {
     id: 109,
@@ -200,7 +200,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 29,
     imgUrl: "/img/product/women-5.jpg",
-    productUrl: "/product/lounge-shorts"
+    productUrl: "/product/lounge-shorts",
   },
   {
     id: 110,
@@ -211,158 +211,210 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 36,
     imgUrl: "/img/product/women-3.jpg",
-    productUrl: "/product/active-training-tee"
-  }
+    productUrl: "/product/active-training-tee",
+  },
 ];
 
 export const dummyNavCardArray: NavigationCardProps[] = [
-    {
-        title: "Reps in Red",
-        description: "Red fits to hit the gym in. It's a strong choice.",
-        buttonLabel: "shop red",
-        imgUrl: "/img/product/women-1.jpg",
-        url: "/women/gym-sets/red",
-        category: "women"
-      },
-      {
-        title: "Running",
-        description: "Running stuff so good it'll (almost) make you want to do cardio.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/women-2.jpg",
-        url: "/women/running",
-        category: "women"
-      },
-      {
-        title: "T-Shirts & Tops",
-        description: "Get ready for the ultimate style and performance combo with our women's gym t-shirts.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/women-3.jpg",
-        url: "/women/t-shirts",
-        category: "women"
-      },
-      {
-        title: "New Season = New Shorts",
-        description: "Let's be honest, it's always shorts season round here.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/women-4.jpg",
-        url: "/women/new-season",
-        category: "women"
-      },
-      {
-        title: "Sam Sulek's Lifting Staples",
-        description: "Check out the new Gymshark athlete's top picks.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/men-1.jpg",
-        url: "/men/athlete-top-picks",
-        category: "men"
-      },
-      {
-        title: "Sorry You Missed It",
-        description: "The last Onyx drop was a hidden gem for our top Gymshark Loyalty members. Don't miss the next one!",
-        buttonLabel: "find out more",
-        imgUrl: "/img/product/men-2.jpg",
-        url: "/pages/onyx",
-        category: "men"
-      },
-      {
-        title: "Onyx Fomo?",
-        description: "Here are some other second skin compression fit tops that'll also make your arms look massive.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/men-4.jpg",
-        url: "/collections/compression-fit-shirts/mens",
-        category: "men"
-      },
-      {
-        title: "Hoodies & Sweatshirts",
-        description: "Made for more than the gym floor, our men's gym hoodies & sweatshirts provide the perfect extra layer whether you're lifting weights or enjoying a rest day on the sofa.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/men-3.jpg",
-        url: "/products/hoodies",
-        category: "men"
-      },
-      {
-        title: "Sorry You Missed It",
-        description: "The last Onyx drop was a hidden gem for our top Gymshark Loyalty members. Don't miss the next one!",
-        buttonLabel: "find out more",
-        imgUrl: "/img/product/men-5.jpg",
-        url: "/pages/onyx",
-        category: "men"
-      },
-      {
-        title: "Onyx Fomo?",
-        description: "Here are some other second skin compression fit tops that'll also make your arms look massive.",
-        buttonLabel: "shop now",
-        imgUrl: "/img/product/men-6.jpg",
-        url: "/collections/compression-fit-shirts/mens",
-        category: "men"
-      },
+  {
+    title: "Reps in Red",
+    description: "Red fits to hit the gym in. It's a strong choice.",
+    buttonLabel: "shop red",
+    imgUrl: "/img/product/women-1.jpg",
+    url: "/women/gym-sets/red",
+    category: "women",
+  },
+  {
+    title: "Running",
+    description:
+      "Running stuff so good it'll (almost) make you want to do cardio.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/women-2.jpg",
+    url: "/women/running",
+    category: "women",
+  },
+  {
+    title: "T-Shirts & Tops",
+    description:
+      "Get ready for the ultimate style and performance combo with our women's gym t-shirts.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/women-3.jpg",
+    url: "/women/t-shirts",
+    category: "women",
+  },
+  {
+    title: "New Season = New Shorts",
+    description: "Let's be honest, it's always shorts season round here.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/women-4.jpg",
+    url: "/women/new-season",
+    category: "women",
+  },
+  {
+    title: "Sam Sulek's Lifting Staples",
+    description: "Check out the new Gymshark athlete's top picks.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/men-1.jpg",
+    url: "/men/athlete-top-picks",
+    category: "men",
+  },
+  {
+    title: "Sorry You Missed It",
+    description:
+      "The last Onyx drop was a hidden gem for our top Gymshark Loyalty members. Don't miss the next one!",
+    buttonLabel: "find out more",
+    imgUrl: "/img/product/men-2.jpg",
+    url: "/pages/onyx",
+    category: "men",
+  },
+  {
+    title: "Onyx Fomo?",
+    description:
+      "Here are some other second skin compression fit tops that'll also make your arms look massive.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/men-4.jpg",
+    url: "/collections/compression-fit-shirts/mens",
+    category: "men",
+  },
+  {
+    title: "Hoodies & Sweatshirts",
+    description:
+      "Made for more than the gym floor, our men's gym hoodies & sweatshirts provide the perfect extra layer whether you're lifting weights or enjoying a rest day on the sofa.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/men-3.jpg",
+    url: "/products/hoodies",
+    category: "men",
+  },
+  {
+    title: "Sorry You Missed It",
+    description:
+      "The last Onyx drop was a hidden gem for our top Gymshark Loyalty members. Don't miss the next one!",
+    buttonLabel: "find out more",
+    imgUrl: "/img/product/men-5.jpg",
+    url: "/pages/onyx",
+    category: "men",
+  },
+  {
+    title: "Onyx Fomo?",
+    description:
+      "Here are some other second skin compression fit tops that'll also make your arms look massive.",
+    buttonLabel: "shop now",
+    imgUrl: "/img/product/men-6.jpg",
+    url: "/collections/compression-fit-shirts/mens",
+    category: "men",
+  },
+];
 
-
-    ]
-
-export const dummyCategoryCards:NavigationCardProps[] = [
+export const dummyCategoryCards: NavigationCardProps[] = [
   {
     buttonLabel: "Women",
     url: "/women",
-    imgUrl: "/img/product/women-2.jpg"
+    imgUrl: "/img/product/women-2.jpg",
   },
   {
     buttonLabel: "Men",
     url: "/men",
-    imgUrl: "/img/product/men-6.jpg"
+    imgUrl: "/img/product/men-6.jpg",
   },
   {
     buttonLabel: "accessories",
     url: "/accessories",
-    imgUrl: "/img/product/accessories-1.jpg"
+    imgUrl: "/img/product/accessories-1.jpg",
   },
-
-]
+];
 
 export const collectionsLinks = [
   {
     title: "Women's Leggings",
     links: [
       { collectionName: "Gym Leggings", url: "/collections/gym-leggings" },
-      { collectionName: "Leggings With Pockets", url: "/collections/leggings-with-pockets" },
-      { collectionName: "High Waisted Leggings", url: "/collections/high-waisted-leggings" },
-      { collectionName: "Scrunch Bum Leggings", url: "/collections/scrunch-bum-leggings" },
+      {
+        collectionName: "Leggings With Pockets",
+        url: "/collections/leggings-with-pockets",
+      },
+      {
+        collectionName: "High Waisted Leggings",
+        url: "/collections/high-waisted-leggings",
+      },
+      {
+        collectionName: "Scrunch Bum Leggings",
+        url: "/collections/scrunch-bum-leggings",
+      },
       { collectionName: "Black Leggings", url: "/collections/black-leggings" },
-      { collectionName: "Flared Leggings", url: "/collections/flared-leggings" },
-      { collectionName: "Seamless Leggings", url: "/collections/seamless-leggings" },
-      { collectionName: "Petite Gym Leggings", url: "/collections/petite-gym-leggings" },
-    ]
+      {
+        collectionName: "Flared Leggings",
+        url: "/collections/flared-leggings",
+      },
+      {
+        collectionName: "Seamless Leggings",
+        url: "/collections/seamless-leggings",
+      },
+      {
+        collectionName: "Petite Gym Leggings",
+        url: "/collections/petite-gym-leggings",
+      },
+    ],
   },
   {
     title: "Women's Gymwear",
     links: [
-      { collectionName: "Women's Gym Wear", url: "/collections/womens-gym-wear" },
-      { collectionName: "Womens Gym Shorts", url: "/collections/womens-gym-shorts" },
+      {
+        collectionName: "Women's Gym Wear",
+        url: "/collections/womens-gym-wear",
+      },
+      {
+        collectionName: "Womens Gym Shorts",
+        url: "/collections/womens-gym-shorts",
+      },
       { collectionName: "Running Shorts", url: "/collections/running-shorts" },
       { collectionName: "Sports Bras", url: "/collections/sports-bras" },
-      { collectionName: "High Impact Sports Bras", url: "/collections/high-impact-sports-bras" },
-      { collectionName: "Black Sports Bras", url: "/collections/black-sports-bras" },
+      {
+        collectionName: "High Impact Sports Bras",
+        url: "/collections/high-impact-sports-bras",
+      },
+      {
+        collectionName: "Black Sports Bras",
+        url: "/collections/black-sports-bras",
+      },
       { collectionName: "Matching Sets", url: "/collections/matching-sets" },
       { collectionName: "Loungewear", url: "/collections/loungewear" },
-    ]
+    ],
   },
   {
     title: "Men's Gymwear",
     links: [
       { collectionName: "Men's Gymwear", url: "/collections/mens-gymwear" },
-      { collectionName: "Mens Gym Shorts", url: "/collections/mens-gym-shorts" },
-      { collectionName: "Shorts with Pockets", url: "/collections/shorts-with-pockets" },
-      { collectionName: "Men's Running Shorts", url: "/collections/mens-running-shorts" },
+      {
+        collectionName: "Mens Gym Shorts",
+        url: "/collections/mens-gym-shorts",
+      },
+      {
+        collectionName: "Shorts with Pockets",
+        url: "/collections/shorts-with-pockets",
+      },
+      {
+        collectionName: "Men's Running Shorts",
+        url: "/collections/mens-running-shorts",
+      },
       { collectionName: "Gym Shirts", url: "/collections/gym-shirts" },
-      { collectionName: "Sleeveless T-Shirts", url: "/collections/sleeveless-t-shirts" },
+      {
+        collectionName: "Sleeveless T-Shirts",
+        url: "/collections/sleeveless-t-shirts",
+      },
       { collectionName: "Gym Stringers", url: "/collections/gym-stringers" },
-      { collectionName: "Men's Baselayers", url: "/collections/mens-baselayers" },
-    ]
+      {
+        collectionName: "Men's Baselayers",
+        url: "/collections/mens-baselayers",
+      },
+    ],
   },
   {
     title: "Accessories",
     links: [
-      { collectionName: "Women's Underwear", url: "/collections/womens-underwear" },
+      {
+        collectionName: "Women's Underwear",
+        url: "/collections/womens-underwear",
+      },
       { collectionName: "Men's Underwear", url: "/collections/mens-underwear" },
       { collectionName: "Gym Bags", url: "/collections/gym-bags" },
       { collectionName: "Duffel Bags", url: "/collections/duffel-bags" },
@@ -370,6 +422,6 @@ export const collectionsLinks = [
       { collectionName: "Crew Socks", url: "/collections/crew-socks" },
       { collectionName: "Caps", url: "/collections/caps" },
       { collectionName: "Beanies", url: "/collections/beanies" },
-    ]
-  }
+    ],
+  },
 ];

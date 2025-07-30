@@ -1,7 +1,5 @@
-
-
 .heading {
-    padding-inline-start: 4rem;
-    margin-bottom: var(--margin-m);
-    color: var(--color-grey-700);
+  padding-inline-start: 4rem;
+  margin-bottom: var(--margin-m);
+  color: var(--color-grey-700);
 }

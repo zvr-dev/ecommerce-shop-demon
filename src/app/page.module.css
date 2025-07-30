@@ -10,8 +10,8 @@
 .back_to_top_btn {
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: rgba(0,0,0,.2);
-  padding: .5em .7em;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5em 0.7em;
   border-radius: 2em;
   text-transform: capitalize;
   margin-bottom: 2rem;
