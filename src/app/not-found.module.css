@@ -1,0 +1,16 @@
+.wrapper {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  display: grid;
+  text-align: center;
+  gap: var(--spacing-20);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
