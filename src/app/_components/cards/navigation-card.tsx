@@ -40,9 +40,9 @@ export const NavigationCard = ({
           )}
         </div>
         <div className={style.card_btn_wrapper}>
-          <Link href={url}>
-            <CustomButton variant="dark">{buttonLabel}</CustomButton>
-          </Link>
+          <CustomButton href={url} variant="dark">
+            {buttonLabel}
+          </CustomButton>
         </div>
       </article>
     </li>

@@ -6,7 +6,7 @@
   display: grid;
   place-content: center;
   line-height: 1.5rem;
-  margin-bottom: var(--margin-xl);
+  margin-bottom: var(--spacing-40);
   z-index: 1;
 }
 
@@ -23,7 +23,7 @@
 .hero_content {
   color: white;
   display: grid;
-  gap: 1rem;
+  gap: var(--spacing-10);
   height: 100%;
   text-align: center;
   width: 44ch;
@@ -49,7 +49,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: var(--spacing-6);
 }
 
 .hero_block_button_group button {

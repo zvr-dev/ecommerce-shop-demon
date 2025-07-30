@@ -34,8 +34,14 @@
   justify-content: center;
 }
 
-.btn_icon:hover {
+.btn_icon:hover,
+.btn_icon:focus {
   background-color: var(--color-grey-300);
+}
+
+.btn_icon:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color; /* for WebKit browsers */
 }
 
 .add_to_cart {

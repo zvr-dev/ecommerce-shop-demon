@@ -65,12 +65,12 @@ export const VideoHero = ({
         <p>{content}</p>
         {ctaButtons ? (
           <div className={style.cta_btn_group}>
-            <Link href="/women">
-              <CustomButton variant="light">Shop Women's</CustomButton>
-            </Link>
-            <Link href="men">
-              <CustomButton variant="light">Shop Men's</CustomButton>
-            </Link>
+            <CustomButton href="/women" variant="light">
+              Shop Women's
+            </CustomButton>
+            <CustomButton href="/men" variant="light">
+              Shop Men's
+            </CustomButton>
           </div>
         ) : (
           ""

@@ -36,8 +36,7 @@ export const NavigationCarousel = ({
                 variant={currentSelection === "women" ? "dark" : "light"}
                 onClick={() => setCurrentSelection("women")}
               >
-                {" "}
-                WOMEN{" "}
+                WOMEN
               </CustomButton>
             ) : (
               ""
@@ -47,8 +46,7 @@ export const NavigationCarousel = ({
                 variant={currentSelection === "men" ? "dark" : "light"}
                 onClick={() => setCurrentSelection("men")}
               >
-                {" "}
-                MEN{" "}
+                MEN
               </CustomButton>
             ) : (
               ""

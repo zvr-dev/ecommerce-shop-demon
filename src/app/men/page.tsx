@@ -24,7 +24,7 @@ export default function Page() {
         ]}
       />
 
-      <h3 className={style.heading}>men</h3>
+      <h3 className={style.heading}>Mens</h3>
 
       <ProductCarousel title="new in" sectionUrl={`/men`} data={productData} />
 

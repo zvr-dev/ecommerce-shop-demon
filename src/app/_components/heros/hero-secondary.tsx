@@ -26,9 +26,9 @@ export const HeroSecondary = ({
         <p>{content}</p>
         <div className={style.hero_block_button_group}>
           {buttons?.map((button, idx) => (
-            <Link key={idx} href={button.url}>
-              <CustomButton variant="light">{button.content}</CustomButton>
-            </Link>
+            <CustomButton key={idx} href={button.url} variant="light">
+              {button.content}
+            </CustomButton>
           ))}
         </div>
       </div>

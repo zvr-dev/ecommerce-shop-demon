@@ -10,17 +10,18 @@
 .light {
   background-color: var(--color-grey-50);
   color: var(--color-grey-900);
-}
-.light:hover,
-.light:active,
-.light:focus {
-  background-color: var(--color-grey-300);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--color-grey-300);
+  }
 }
 .dark {
   background-color: var(--color-grey-900);
   color: var(--color-grey-50);
-}
-
-.dark:hover {
-  background-color: var(--color-grey-700);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--color-grey-600);
+  }
 }

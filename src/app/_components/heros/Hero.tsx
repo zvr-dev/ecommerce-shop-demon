@@ -33,12 +33,12 @@ export const Hero = ({
             </Link>
           ) : (
             <>
-              <Link href="/womens">
-                <CustomButton variant="light">Shop Women's</CustomButton>
-              </Link>
-              <Link href="/mens">
-                <CustomButton variant="light">Shop Men's</CustomButton>
-              </Link>
+              <CustomButton href="/women" variant="light">
+                Shop Women's
+              </CustomButton>
+              <CustomButton href="/men" variant="light">
+                Shop Men's
+              </CustomButton>
             </>
           )}
         </div>

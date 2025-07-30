@@ -1,12 +1,12 @@
 .section_wrapper {
-  margin-bottom: 4rem;
-  padding-inline: var(--padding-m);
+  margin-bottom: var(--spacing-40);
+  padding-inline: var(--spacing-40);
 }
 
 .section_title_group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-24);
 }
 
 .section_title_group > a {

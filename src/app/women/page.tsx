@@ -20,13 +20,10 @@ export default function Page() {
         title="New drops for your next workout"
         content="Strong enough for gym. Comfy enough for campus. Stylish enough for everyday"
         imgUrl={`/img/product/women-6.jpg`}
-        buttons={[
-          { content: "shop now", url: "/" },
-          { content: "shop now", url: "/" },
-        ]}
+        buttons={[{ content: "shop now", url: "/women" }]}
       />
 
-      <h3 className={style.heading}>women</h3>
+      <h3 className={style.heading}>Womens</h3>
 
       <ProductCarousel title="new in" sectionUrl={`/men`} data={productData} />
 
