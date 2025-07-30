@@ -1,7 +1,7 @@
-import { GenderTypes } from "@/app/_types/types"
-import style from "./NavigationCard.module.css"
+import { GenderTypes } from "@/types/types"
+import style from "./navigation-card.module.css"
 import Link from "next/link"
-import { CustomButton } from "../buttons/customButton"
+import { CustomButton } from "../buttons/custom-button"
 export type NavigationCardProps = {
     title?: string,
     description?: string,

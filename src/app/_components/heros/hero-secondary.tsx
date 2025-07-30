@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { CustomButton } from '../buttons/customButton'
-import style from './HeroSecondary.module.css'
-import { ButtonLink } from '@/app/_types/types'
+import { CustomButton } from '../buttons/custom-button'
+import style from './hero-secondary.module.css'
+import { ButtonLink } from '@/types/types'
 
 type HeroProps = {
     title: string,

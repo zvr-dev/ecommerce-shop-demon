@@ -1,5 +1,5 @@
 import { collectionsLinks } from '@/app/dummydata'
-import style from './SeoBlock.module.css'
+import style from './seo-block.module.css'
 import Link from 'next/link'
 
 

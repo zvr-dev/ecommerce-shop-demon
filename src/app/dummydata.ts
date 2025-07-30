@@ -1,5 +1,5 @@
-import { NavigationCardProps } from "./_components/cards/NavigationCard";
-import { ProductCardProps } from "./_components/cards/ProductCard";
+import { NavigationCardProps } from "./_components/cards/navigation-card";
+import { ProductCardProps } from "./_components/cards/product-card";
 
 export const dummyProductDataMen: ProductCardProps[] = [
   {
@@ -10,7 +10,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 55,
     imgUrl: "/img/product/men-4.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/varsity-mesh-shorts"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 33,
     imgUrl: "/img/product/men-1.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/varsity-oversized-shirt"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     color: "black",
     price: 55,
     imgUrl: "/img/product/men-6.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/varsity-7-shorts"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 35,
     imgUrl: "/img/product/men-3.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/oversized-joggers"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 28,
     imgUrl: "/img/product/men-7.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/tech-t-shirt"
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 60,
     imgUrl: "/img/product/men-2.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/athletic-hoodie"
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     color: "white",
     price: 25,
     imgUrl: "/img/product/men-5.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/performance-tank"
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 42,
     imgUrl: "/img/product/men-1.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/lightweight-zip-hoodie"
   },
   {
     id: 9,
@@ -93,7 +93,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "new",
     price: 38,
     imgUrl: "/img/product/men-7.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/essential-sweatpants"
   },
   {
     id: 10,
@@ -104,7 +104,7 @@ export const dummyProductDataMen: ProductCardProps[] = [
     tag: "hot",
     price: 32,
     imgUrl: "/img/product/men-2.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/mesh-training-shorts"
   }
 ];
 
@@ -117,7 +117,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 48,
     imgUrl: "/img/product/women-3.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/seamless-leggings"
   },
   {
     id: 102,
@@ -128,7 +128,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 27,
     imgUrl: "/img/product/women-1.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/cropped-tank-top"
   },
   {
     id: 103,
@@ -138,7 +138,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     color: "grey",
     price: 35,
     imgUrl: "/img/product/women-5.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/high-waisted-shorts"
   },
   {
     id: 104,
@@ -149,7 +149,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 52,
     imgUrl: "/img/product/women-2.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/oversized-hoodie"
   },
   {
     id: 105,
@@ -159,7 +159,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 30,
     imgUrl: "/img/product/women-6.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/training-sports-bra"
   },
   {
     id: 106,
@@ -170,7 +170,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 45,
     imgUrl: "/img/product/women-4.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/lightweight-joggers"
   },
   {
     id: 107,
@@ -179,7 +179,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     color: "white",
     price: 24,
     imgUrl: "/img/product/women-2.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/essential-crop-top"
   },
   {
     id: 108,
@@ -190,7 +190,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 40,
     imgUrl: "/img/product/women-1.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/flared-leggings"
   },
   {
     id: 109,
@@ -200,7 +200,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "new",
     price: 29,
     imgUrl: "/img/product/women-5.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/lounge-shorts"
   },
   {
     id: 110,
@@ -211,7 +211,7 @@ export const dummyProductDataWomen: ProductCardProps[] = [
     tag: "hot",
     price: 36,
     imgUrl: "/img/product/women-3.jpg",
-    productUrl: "/product/"
+    productUrl: "/product/active-training-tee"
   }
 ];
 

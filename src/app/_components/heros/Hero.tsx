@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { CustomButton } from '../buttons/customButton'
-import style from './Hero.module.css'
+import { CustomButton } from '../buttons/custom-button'
+import style from './hero.module.css'
 
 type HeroProps = {
     title: string,

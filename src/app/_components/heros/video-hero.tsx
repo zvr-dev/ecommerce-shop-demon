@@ -1,7 +1,7 @@
 "use client"
 import { useRef, useState } from "react";
-import style from "./VideoHero.module.css"
-import { CustomButton } from "../buttons/customButton";
+import style from "./video-hero.module.css"
+import { CustomButton } from "../buttons/custom-button";
 import Link from "next/link";
 type VideoHeroProps = {
     src : string;

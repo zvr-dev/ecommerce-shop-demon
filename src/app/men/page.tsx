@@ -1,6 +1,6 @@
-import { NavigationCarousel } from "@/app/_components/carousels/NavigationCarousel";
-import { ProductCarousel } from "@/app/_components/carousels/ProductCarousel";
-import { HeroSecondary } from "@/app/_components/heros/HeroSecondary";
+import { NavigationCarousel } from "@/app/_components/carousels/navigation-carousel";
+import { ProductCarousel } from "@/app/_components/carousels/product-carousel";
+import { HeroSecondary } from "@/app/_components/heros/hero-secondary";
 import { dummyNavCardArray, dummyProductDataMen, dummyProductDataWomen } from "@/app/dummydata";
 import { notFound } from "next/navigation";
 import style from './page.module.css'

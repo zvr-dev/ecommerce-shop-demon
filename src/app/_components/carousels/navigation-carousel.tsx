@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react"
-import { CustomButton } from "../buttons/customButton"
-import { NavigationCard, NavigationCardProps } from "../cards/NavigationCard"
-import style from "./NavigationCarousel.module.css"
-import { GenderTypes } from "@/app/_types/types"
+import { CustomButton } from "../buttons/custom-button"
+import { NavigationCard, NavigationCardProps } from "../cards/navigation-card"
+import style from "./navigation-carousel.module.css"
+import { GenderTypes } from "@/types/types"
 
 type NavigationCarouselProps = {
     title?: string,
@@ -15,8 +15,6 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
     
     // sort cards
     let sortedCards = sortCards(cardArray);
-
-    console.log(sortedCards)
 
     const [currentSelection, setCurrentSelection] = useState<GenderTypes>(Object.keys(sortedCards)[0] as GenderTypes);
 
@@ -71,7 +69,7 @@ export const NavigationCarousel = ({title, cardArray}: NavigationCarouselProps) 
     </section>
 }
 
-const sortCards = (cardArray : NavigationCardProps[]) => {
+const sortCards = (cardArray : NavigationCardProps[]) : Record<string,NavigationCardProps[]> => {
     let uncategorised = "uncategorised"
     let sortedCards: Record<string, typeof cardArray> = {uncategorised:[]}
         cardArray.forEach((card) => {

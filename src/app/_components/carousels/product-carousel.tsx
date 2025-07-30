@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ProductCard, ProductCardProps, Tag } from "../cards/ProductCard";
-import style from "./ProductCarousel.module.css"
+import { ProductCard, ProductCardProps, Tag } from "../cards/product-card";
+import style from "./product-carousel.module.css"
 
 type ProductCarouselProps = {
     title: string;

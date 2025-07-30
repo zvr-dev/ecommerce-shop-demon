@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import style from './ProductCard.module.css'
+import style from './product-card.module.css'
 
 export type Tag = "new" | "hot" | undefined;
 

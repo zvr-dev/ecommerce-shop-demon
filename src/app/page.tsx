@@ -1,15 +1,16 @@
 import Link from 'next/link';
-import { CustomButton } from './_components/buttons/customButton';
-import { ProductCarousel } from './_components/carousels/ProductCarousel';
-import { NavigationCarousel } from './_components/carousels/NavigationCarousel';
-import { VideoHero } from './_components/heros/VideoHero';
+import { CustomButton } from './_components/buttons/custom-button';
+import { ProductCarousel } from './_components/carousels/product-carousel';
+import { NavigationCarousel } from './_components/carousels/navigation-carousel';
+import { VideoHero } from './_components/heros/video-hero';
 
 import style from './page.module.css'
 import { dummyCategoryCards, dummyNavCardArray, dummyProductDataMen } from '@/app/dummydata';
-import { Hero } from './_components/heros/Hero';
-import { SeoBlock } from './_components/_layout/SeoBlock';
+import { Hero } from './_components/heros/hero';
+import { SeoBlock } from './_components/_layout/seo-block';
 
 export default function Home() {
+  // fetch the campaigns needed for this page
 
   return (
     <main className={style.content}>
@@ -30,7 +31,6 @@ export default function Home() {
         data={dummyProductDataMen}
         />
 
-
       {/* Popular Items */}
       <section>
         <NavigationCarousel title="popular right now" cardArray={dummyNavCardArray}/>
@@ -45,26 +45,20 @@ export default function Home() {
         />
 
       {/* New Items */}
-      <section>
-        <ProductCarousel 
-          title="New in"  
-          sectionUrl='/'
-          data={dummyProductDataMen}
-          />
-
-      </section>
+      <ProductCarousel 
+        title="New in"  
+        sectionUrl='/'
+        data={dummyProductDataMen}
+        />
 
       {/* Categories */}
-      <section>
-        <NavigationCarousel title='how do you train?' 
-          cardArray={dummyNavCardArray.map(({description, ...rest}) => ({...rest}))}/>
-      </section>
+      <NavigationCarousel title='how do you train?' 
+        cardArray={dummyNavCardArray.map(({description, ...rest}) => ({...rest}))}/>
 
       {/* WOMEN MEN ACCESSORIES */}
-      <section>
-        <NavigationCarousel cardArray={dummyCategoryCards}
-        />
-      </section>
+      <NavigationCarousel cardArray={dummyCategoryCards}
+      />
+      
       {/* Back to Top button */}
       <div className={style.btt_wrapper}>
         <Link href="/#"><button className={style.back_to_top_btn}>Back to top</button></Link>

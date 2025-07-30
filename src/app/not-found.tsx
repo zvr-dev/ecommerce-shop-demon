@@ -1,4 +1,4 @@
-import { CustomButton } from "./_components/buttons/customButton";
+import { CustomButton } from "./_components/buttons/custom-button";
 
 
 export default function NotFound () {
